@@ -250,7 +250,7 @@ class TypoFixer:
 
     def repair_units(self, line):
         fixes = 0
-        if not line.startswith(("\\newpage", "\\begin", "\\emptypage")):
+        if not line.startswith("\\") or line.startswith(("\\noindent", "\\caption")):
             for char in self.UNITS:
                 line, num = re.subn(
                     f" {char}(?![a-zA-Z0-9žščřďťňěéíáýůúóöŽŠČŘĎŤŇĚÉÍÁÝŮÚÓÖ])",
