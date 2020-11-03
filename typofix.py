@@ -110,7 +110,7 @@ class TypoFixer:
         r"kg",
         r"t",
         r"°C",
-        r"\\textdegree C",
+        r"\\textdegree",
     ]
 
     def __init__(self, params, *args, **kwargs):
