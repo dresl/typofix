@@ -248,7 +248,7 @@ class TypoFixer:
         if not line.startswith(("\\newpage", "\\begin", "\\emptypage")):
             for char in self.UNITS:
                 line, num = re.subn(
-                    f" {char}(?![a-zA-Z0-9žščřďťňěíáýŽŠČŘĎŤŇĚÍÁÝ])",
+                    f" {char}(?![a-zA-Z0-9žščřďťňěéíáýůúóöŽŠČŘĎŤŇĚÉÍÁÝŮÚÓÖ])",
                     "~{}".format(char.replace(" ", "~").replace("\\.", ".")),
                     line,
                 )
