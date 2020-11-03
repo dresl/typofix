@@ -233,6 +233,14 @@ class TypoFixer:
         fixes += num
         if num != 0:
             print(line, fixes)
+        line, num = re.subn(r" ÷ ", "~÷~", line)
+        fixes += num
+        if num != 0:
+            print(line, fixes)
+        line, num = re.subn(r" × ", "~×~", line)
+        fixes += num
+        if num != 0:
+            print(line, fixes)
         return line, fixes
 
     def repair_units(self, line):
