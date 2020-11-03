@@ -102,10 +102,15 @@ class TypoFixer:
         r"km",
         r"%",
         r"g",
+        r"g/cm${^3}$",
+        r"mol",
+        r"mol/l",
         r"mg",
         r"dkg",
         r"kg",
         r"t",
+        r"°C",
+        r"\textdegree C",
     ]
 
     def __init__(self, params, *args, **kwargs):
