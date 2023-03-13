@@ -5,11 +5,12 @@ Python script to fix typography mistakes in **LaTeX** (best suit to Czech).
 ## Usage
 
 ```bash
-python typofix.py name_of_the_file
+python typofix.py name_of_the_file.tex
 ```
 
-Very simple help (so far):
+There will be created a file named `name_of_the_file_converted.tex`.
 
+Very simple help (so far):
 ```
 python typofix.py -h
 ```
